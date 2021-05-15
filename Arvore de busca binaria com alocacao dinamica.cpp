@@ -77,8 +77,7 @@ void buscaArvore(int valor)
             if(aux->dado>valor)
             {
                 aux=aux->dir;
-            }
-            if(aux->dado<valor)
+            }else
             {
                 aux=aux->esq;
             }
@@ -93,5 +92,5 @@ main()
     insere(2);
     insere(6);
     em_ordem(raiz);
-    buscaArvore(0);
+    buscaArvore(55);
 }
